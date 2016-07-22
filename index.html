@@ -15,22 +15,22 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <h2>fruits</h2>
+                    <h2>Fruits</h2>
                     <div class="well" ng-repeat="fruit in fruits track by $index" ng-class="{'right':check(fruit, 'fruits')}">
 
-                      {{fruit}}<button ng-click="click('both',$index, 'fruits')">--></button>
+                      {{fruit}}<button class="btn btn-primary pull-right" ng-click="click('both',$index, 'fruits')">&rarr;</button>
                       </div>
 </div>
                 <div class="col-sm-4">
-                    both
+                    <h2>Both</h2>
                     <div class="well" ng-repeat="thing in both track by $index" >
-                    <button ng-click="click('fruits',$index, 'both')"><--</button>{{thing}}<button ng-click="click('vegetables', $index, 'both')">--></button>
+                    <button class="btn btn-primary pull-left" ng-click="click('fruits',$index, 'both')">&larr;</button>{{thing}}<button class="btn btn-primary pull-right" ng-click="click('vegetables', $index, 'both')">&rarr;</button>
                     </div>
 </div>
                 <div class="col-sm-4">
-                    veggies
+                   <h2> Veggies </h2>
                     <div class="well" ng-repeat="vegetable in vegetables track by $index" ng-class="{'right':check(vegetable, 'vegetables')}">
-                    <button ng-click="click('both', $index, 'vegetables')"><--</button>{{vegetables}}
+                    <button class="btn btn-primary pull-left" ng-click="click('both', $index, 'vegetables')">&larr;</button>{{vegetables}}
                     </div>
                 </div>
             </div>
