@@ -1,1 +1,16 @@
 /* file for your css */
+.right {
+  border: 1px solid red;
+
+}
+body {
+  background-image:url("https://images.unsplash.com/photo-1466838931486-92f3b5ff31a6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a4da5f71b9af2d1081fa68f97771f446");
+}
+
+h1 {
+  color:white;
+}
+
+h2 {
+  color:white;
+}
